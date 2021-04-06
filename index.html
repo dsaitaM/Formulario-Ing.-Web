@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <h1 id="enviado" style="display: none;">
+            Hemos  recibido  sus  datos,  pronto  nos estaremos comunicando con usted.
+        </h1>
+        <form id="formulario" method="post">
+        <ul>
+            <li>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" maxlength="15" placeholder="Nombre" required>
+            </li>
+            <li>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" maxlength="30" placeholder="Apellidos" required>
+            </li>
+            <li>
+                <label for="rut">RUT</label>
+                <input type="text" id="rut" maxlength="8" placeholder="12345678" required> -
+                <input type="text" id="guion" maxlength="1" size="1" placeholder="1" required>
+            </li>
+            <li>
+                <label for="mail">Correo Electrónico</label>
+                <input type="email" id="mail" maxlength="30" placeholder="correo@mail.com" required>
+            </li>
+            <li>
+                <label for="telefono">Teléfono Movil</label>
+                <input type="number" id="telefono" min="100000000" max="999999999" placeholder="912345678" required>
+            </li>
+            <li>
+                <p>Seleccione 1 o más lenguajes de su interés</p>
+                <label id="caja"><input type="checkbox" name="leng">Python</label>
+                <label id="caja"><input type="checkbox" name="leng">Java</label>
+                <label id="caja"><input type="checkbox" name="leng">TypeScript</label>
+                <label id="caja"><input type="checkbox" name="leng">PHP</label>
+                <label id="caja"><input type="checkbox" name="leng">C#</label>
+                <label id="caja"><input type="checkbox" name="leng">C++</label>
+            </li>
+            <li>
+                <label for="nivel">Nivel de conomiento en programación</label>
+                <input type="range" id="nivel" required>
+            </li>
+            <li>
+                <p>Años de experiencia laboral</p>
+                <input type="radio" name="años" value="1" required> 1. 
+                <input type="radio" name="años" value="2"> 2. 
+                <input type="radio" name="años" value="3"> 3. 
+                <input type="radio" name="años" value="4"> 4. 
+                <input type="radio" name="años" value="5"> 5.
+            </li>
+            <li>
+                <label for="descripcion">Descripción breve</label>
+                <textarea id="descripcion" maxlength="300" placeholder="Descripción" required></textarea>
+            </li>
+
+            <li>
+                <button type="submit" id="submit">Enviar datos</button>
+                <!-- <input type="reset" value="Limpiar datos"> -->
+                <button type="button" onclick="limpiarDatos()">Limpiar datos</button>
+            </li>
+            <p id="mensaje" style="display: none;"></p>
+        </ul>
+        </form>
+        <script src="js/inicio.js" async defer></script>
+    </body>
+</html>

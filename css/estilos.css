@@ -1,0 +1,42 @@
+label {
+  font-size: 20px;
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #ff0838;
+  background-color: #77a0f3;
+  padding-bottom: 657px;
+  padding-top: 20px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ul {
+  background-color: #77a0f3;
+  padding: 50px;
+  padding-bottom: 120px;
+}
+
+li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+#caja {
+  width: 120px;
+  font-weight: normal;
+}
+
+#mensaje {
+  color: #ff0838;
+  font-size: 18px;
+  position: absolute;
+  background-color: white;
+}
+/*# sourceMappingURL=estilos.css.map */
